@@ -1,1 +1,1 @@
-# quik-pic-slider
+# Game photo slideshow
