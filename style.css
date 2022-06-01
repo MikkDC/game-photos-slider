@@ -1,0 +1,88 @@
+body, html, ul, li, img, div{
+    margin:0; padding:0;
+  }
+  body{
+    margin: 14px;
+    background-color: rgb(77, 77, 77);
+  }
+
+  img {
+    width: 960px;
+    height: 540px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    color: ghostwhite;
+    padding: 2px;    
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+  .message {
+    color: ghostwhite;
+    padding: 7px;    
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .slider img{
+    display:block;
+  }
+  .slider{
+    outline:1px solid rgb(0, 0, 0);
+    width: 960px;
+    height: 540px;
+    overflow-x:hidden;
+  }
+  
+  .slider__content{
+    list-style:none;
+    display:flex;
+    animation-name: slide;
+    animation-duration:35s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
+  .slider__content:hover{
+    animation-play-state:paused;    
+  }
+  
+  @keyframes slide{
+    5%{
+      transform:translateX(0);
+    }
+    10%, 15%{
+      transform:translateX(-100%);
+    }
+    20%, 25%{
+      transform:translateX(-200%);
+    }
+    30%, 35%{
+      transform:translateX(-300%);
+    }
+    40%, 45%{
+      transform:translateX(-400%);
+    }
+    50%, 55%{
+      transform:translateX(-500%);
+    }
+    60%, 65%{
+      transform:translateX(-600%);
+    }
+    70%, 75%{
+      transform:translateX(-700%);
+    }
+    80%, 85%{
+      transform:translateX(-800%);
+    }
+    90%, 95%{
+      transform:translateX(-900%);
+    }
+    
+  }
