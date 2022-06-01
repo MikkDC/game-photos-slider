@@ -35,10 +35,12 @@ body, html, ul, li, img, div{
     display:block;
   }
   .slider{
-    outline:1px solid rgb(0, 0, 0);
+    /* outline:1px solid rgb(150, 150, 150);
+    border-radius: 7px; */
     width: 960px;
     height: 540px;
     overflow-x:hidden;
+    box-shadow: 0px 2px 14px 2px;
   }
   
   .slider__content{
